@@ -1,0 +1,37 @@
+/* src/components/ArrowDown.css */
+.arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer; /* لإظهار أن السهم قابل للنقر */
+  }
+  
+  .arrow {
+    width: 24px;
+    height: 24px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    animation: bounce 2s infinite;
+  }
+  
+  .up {
+    transform: rotate(-135deg); /* سهم يشير إلى الأعلى */
+  }
+  
+  .down {
+    transform: rotate(45deg); /* سهم يشير إلى الأسفل */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    40% {
+      transform: translateX(-50%) translateY(10px);
+    }
+    60% {
+      transform: translateX(-50%) translateY(5px);
+    }
+  }
+  

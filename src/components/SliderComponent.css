@@ -1,0 +1,12 @@
+/* SliderComponent.css */
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* تغطي الحاوية بالكامل دون تشويه */
+}
