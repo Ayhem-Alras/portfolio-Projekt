@@ -55,11 +55,9 @@ body, html {
     text-align: center;
 }
 
-
 /* أضف هذا النمط لضمان أن كل مكون يحصل على الخلفية المناسبة */
 .projects-container,
 .experience-container,
 .contact-container {
   background-color: #6F868E!important; /* استخدام !important لتجاوز أي نمط متجاوز */
 }
-

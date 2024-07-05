@@ -1,10 +1,9 @@
-// src/components/Projects.js
 import React from 'react';
 import './Projects.css';
 
 const projects = [
   {
-    title: '  Movie-Search',
+    title: 'Movie-Search',
     description: '',
     link: 'https://example.com/project1',
     image: '/public/images/Screenshot 665.png'

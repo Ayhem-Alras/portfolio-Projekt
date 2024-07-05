@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';
 import Slider from 'react-slick';
-import './SliderComponent.css'; // تأكد من استيراد ملف CSS
+import './SliderComponent.css';
 
 const SliderComponent = () => {
     const settings = {
@@ -20,9 +20,6 @@ const SliderComponent = () => {
         '/public/images/DALL·E 2024-07-04 14.43.29 - A 3D image of a pyramid with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
         '/public/images/DALL·E 2024-07-04 14.43.40 - A 3D image of a cube with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
         '/public/images/DALL·E 2024-07-04 14.43.43 - A 3D image of a sphere with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
-        
-
-        
     ];
 
     return (
