@@ -4,7 +4,7 @@ import './AboutMe.css';
 const AboutMe = () => {
     const phrases = [
         'Ich bin Ayhem und ich habe eine Leidenschaft für JavaScript und die Erstellung interaktiver Webanwendungen.',
-        'Hallo; Ich bin Ayhem'
+        'Hallo; Ich bin Ayhem.'
     ];
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState('');
