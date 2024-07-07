@@ -34,28 +34,28 @@
 }
 
 .label {
- /* إخفاء النصوص الافتراضية */
+ 
   position: absolute;
   top: 50%;
-  right: calc(100% + 10px); /* المسافة بين النقطة والنص */
+  right: calc(100% + 10px); 
   transform: translateY(-50%);
   background-color: #465053;
   padding: 5px;
   border-radius: 5px;
   color: #ffffff;
   font-size: 16px;
-  white-space: nowrap; /* منع النص من السقوط على سطر جديد */
+  white-space: nowrap;
   opacity: 0;
-  pointer-events: none; /* تعطيل تفاعل المستخدم مع النص */
+  pointer-events: none;
   transition: opacity 0.3s ease;
 }
 
 .dot-container:hover .label {
-  opacity: 1; /* إظهار النص عند التحويم */
+  opacity: 1; 
 }
 
 .dot-container:hover .inner-dot {
-  opacity: 0; /* إخفاء الدائرة الداخلية عند التحويم */
+  opacity: 0; 
 }
 
 .inner-dot {
@@ -63,7 +63,7 @@
   height: 12px;
   background-color: #CCCECA;
   border-radius: 50%;
-  opacity: 1; /* إظهار الدائرة الداخلية بشكل افتراضي */
+  opacity: 1; 
   transition: opacity 0.3s ease;
   position: absolute;
   top: 50%;

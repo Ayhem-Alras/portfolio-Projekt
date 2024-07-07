@@ -30,7 +30,7 @@
 .arrow-left {
     left: 10px;
     transform: translateY(-50%) rotate(135deg);
-}
+} 
 
 .arrow-right {
     right: 28px;
