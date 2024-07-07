@@ -1,25 +1,34 @@
-// src/App.jsx
 import React from 'react';
 import SliderComponent from './components/SliderComponent';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import ArrowDown from './components/ArrowDown';
-import Experience from './components/Experience'; // استيراد مكون Experience
-import Contact from './components/Contact'; // استيراد مكون Contact
-
-import './index.css'; // استيراد ملف CSS الأساسي
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import NavigationDots from './components/NavigationDots';
+import './index.css';
 
 function App() {
   return (
     <div className="app-container">
-      <div className="slider-section">
+      <NavigationDots />
+      <div className="slider-section" id="about-me">
         <SliderComponent />
         <AboutMe />
         <ArrowDown />
       </div>
-      <Projects />
-      <Experience /> {/* إضافة قسم Experience */}
-      <Contact /> {/* إضافة قسم Contact */}
+      <div id="Start">
+        <ArrowDown />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="skills">
+        <Experience />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }

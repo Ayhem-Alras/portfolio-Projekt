@@ -1,4 +1,4 @@
-/* src/components/Contact.css */
+
 
 .contact-container {
     padding: 20px;
@@ -41,7 +41,7 @@
   }
   
   .submit-button {
-    background-color: #007bff;
+    background-color: #70868E;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -50,7 +50,7 @@
   }
   
   .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #242e31;
   }
   
   .thank-you-message {

@@ -1,6 +1,6 @@
 // src/components/Experience.js
 import React from 'react';
-import './Experience.css'; // تأكد من استيراد ملف CSS
+import './Experience.css'; 
 
 const experiences = [
   { title: 'HTML', image: '/public/images/html5.jpg', description: 'Erfahrung mit HTML' },

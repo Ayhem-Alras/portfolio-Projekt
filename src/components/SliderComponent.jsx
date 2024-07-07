@@ -6,6 +6,8 @@ import Slider from 'react-slick';
 import './SliderComponent.css';
 
 const SliderComponent = () => {
+    const sliderRef = React.useRef(null);
+
     const settings = {
         dots: false,
         infinite: true,
@@ -17,20 +19,30 @@ const SliderComponent = () => {
     };
 
     const images = [
-        '/public/images/DALL·E 2024-07-04 14.43.29 - A 3D image of a pyramid with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
-        '/public/images/DALL·E 2024-07-04 14.43.40 - A 3D image of a cube with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
         '/public/images/DALL·E 2024-07-04 14.43.43 - A 3D image of a sphere with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
+        '/public/images/DALL·E 2024-07-04 14.43.40 - A 3D image of a cube with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
+        '/public/images/DALL·E 2024-07-04 14.43.29 - A 3D image of a pyramid with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
     ];
+
+    const goToNext = () => {
+        sliderRef.current.slickNext();
+    };
+
+    const goToPrev = () => {
+        sliderRef.current.slickPrev();
+    };
 
     return (
         <div className="slider-container">
-            <Slider {...settings}>
+            <Slider ref={sliderRef} {...settings}>
                 {images.map((image, index) => (
                     <div key={index}>
                         <img src={image} alt={`Slide ${index}`} className="slider-image" />
                     </div>
                 ))}
             </Slider>
+            <div className="arrow-left" onClick={goToPrev}></div>
+            <div className="arrow-right" onClick={goToNext}></div>
         </div>
     );
 };
