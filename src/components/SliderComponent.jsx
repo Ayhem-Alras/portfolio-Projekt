@@ -1,23 +1,8 @@
-// src/components/SliderComponent.js
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import React from 'react';
-import Slider from 'react-slick';
+import React, { useState } from 'react';
 import './SliderComponent.css';
 
 const SliderComponent = () => {
-    const sliderRef = React.useRef(null);
-
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000
-    };
-
+    const [currentSlide, setCurrentSlide] = useState(0);
     const images = [
         '/public/images/DALL·E 2024-07-04 14.43.43 - A 3D image of a sphere with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
         '/public/images/DALL·E 2024-07-04 14.43.40 - A 3D image of a cube with a soft, gradient blue background, rendered in a sleek, modern style with detailed textures and realistic shadows.webp',
@@ -25,22 +10,22 @@ const SliderComponent = () => {
     ];
 
     const goToNext = () => {
-        sliderRef.current.slickNext();
+        setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
     };
 
     const goToPrev = () => {
-        sliderRef.current.slickPrev();
+        setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
     };
 
     return (
         <div className="slider-container">
-            <Slider ref={sliderRef} {...settings}>
+            <div className="slider">
                 {images.map((image, index) => (
-                    <div key={index}>
+                    <div key={index} className={index === currentSlide ? 'slide active' : 'slide'}>
                         <img src={image} alt={`Slide ${index}`} className="slider-image" />
                     </div>
                 ))}
-            </Slider>
+            </div>
             <div className="arrow-left" onClick={goToPrev}></div>
             <div className="arrow-right" onClick={goToNext}></div>
         </div>
