@@ -1,22 +1,23 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-    
-    
-  }
-  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #4d4c4cf6; /* Unified background color */
+}
+
 .app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(238, 238, 238, 0.75), rgba(238, 238, 238, 0.75)), url('../assets/back-darkMode.jpg');
+  background: #4d4c4cf6; /* Unified background color */
+  background-image: linear-gradient(
+      rgba(238, 238, 238, 0.75), 
+      rgba(238, 238, 238, 0.75)
+  ), url('../assets/back-darkMode.jpg');
   background-size: cover;
   background-position: center;
 }
+
 
   
   .slider-section {

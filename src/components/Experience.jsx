@@ -1,14 +1,20 @@
 // src/components/Experience.js
-import React from 'react';
+
 import './Experience.css'; 
 
 const experiences = [
-  { title: 'HTML', image: '/public/images/html5.jpg', description: 'Erfahrung mit HTML' },
-  { title: 'CSS', image: '/public/images/wp-advanced-css-techniques.jpg', description: 'Erfahrung mit CSS' },
-  { title: 'JavaScript', image: '/public/images/javascript-series.jpg', description: 'Erfahrung mit JavaScript' },
-  { title: 'GitHub', image: '/public/images/2022-08-18-GitHub.jpg', description: 'Erfahrung mit GitHub' },
-  { title: 'React', image: '/public/images/React_Native_Logo.png', description: 'Erfahrung mit React' }, // إضافة React
-  { title: 'SCSS', image: '/public/images/1_VMM3yJ94Rydzn96y3Xit7Q.jpg', description: 'Erfahrung mit SCSS' }   // إضافة SCSS
+  { title: 'HTML', image: '/public/images/pngegg (6).png', description: 'Erfahrung mit HTML' },
+  { title: 'CSS', image: '/public/images/pngegg (5).png', description: 'Erfahrung mit CSS' },
+  { title: 'JavaScript', image: '/public/images/pngegg (4).png', description: 'Erfahrung mit JavaScript' },
+  { title: 'GitHub', image: '/public/images/pngegg (3).png', description: 'Erfahrung mit GitHub' },
+  { title: 'React', image: '/public/images/pngegg (2).png', description: 'Erfahrung mit React' }, // إضافة React
+  { title: 'SCSS', image: '/public/images/pngegg (1).png', description: 'Erfahrung mit SCSS' }, // إضافة SCSS
+  { title: 'MongoDB', image: '/public/images/1175140.webp', description: 'Erfahrung mit MongoDB' },
+  { title: 'MySQL', image: 'images/mysql-1-logo-black-and-white.png', description: 'Erfahrung mit MySQL' },
+  { title: 'MongoDB', image: '/public/images/pngegg.png', description: 'Erfahrung mit MongoDB' },
+
+
+
 ];
 
 const Experience = () => {
