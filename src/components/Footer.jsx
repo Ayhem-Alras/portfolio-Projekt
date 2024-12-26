@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="social-links">
         <a
-          href="https://github.com/YourUsername" // ضع رابط GitHub الخاص بك
+          href="https://github.com/Ayhem-Alras"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
@@ -16,7 +16,7 @@ const Footer = () => {
           <FaGithub className="icon" />
         </a>
         <a
-          href="https://instagram.com/YourUsername" // ضع رابط Instagram الخاص بك
+          href="https://www.instagram.com/ayham.zz/"
           target="_blank"
           rel="noopener noreferrer"
           className="social-link"
