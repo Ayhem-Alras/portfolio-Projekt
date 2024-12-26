@@ -1,3 +1,4 @@
+// App.jsx
 import React from 'react';
 import SliderComponent from './components/SliderComponent';
 import AboutMe from './components/AboutMe';
@@ -5,19 +6,16 @@ import Projects from './components/Projects';
 import ArrowDown from './components/ArrowDown';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import NavigationDots from './components/NavigationDots';
-import './index.css';
 
 function App() {
   return (
     <div className="app-container">
       <NavigationDots />
-      <div className="slider-section" id="about-me">
+      <div className="slider-section" id="start">
         <SliderComponent />
         <AboutMe />
-        <ArrowDown />
-      </div>
-      <div id="Start">
         <ArrowDown />
       </div>
       <div id="projects">
@@ -29,11 +27,9 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
+      <Footer /> {/* إضافة Footer هنا */}
     </div>
   );
 }
-
-
-
 
 export default App;

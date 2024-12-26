@@ -4,7 +4,7 @@ const projects = [
   {
     title: "E-Commerce",
     description: '',
-    link: 'git@github.com:Ayhem-Alras/Ampes.git',
+    link: 'https://github.com/Ayhem-Alras/Ampes',
     image: '/images/E.png'
   },
   {

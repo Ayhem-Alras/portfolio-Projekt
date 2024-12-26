@@ -3,18 +3,14 @@
 import './Experience.css'; 
 
 const experiences = [
-  { title: 'HTML', image: '/public/images/pngegg (6).png', description: 'Erfahrung mit HTML' },
-  { title: 'CSS', image: '/public/images/pngegg (5).png', description: 'Erfahrung mit CSS' },
-  { title: 'JavaScript', image: '/public/images/pngegg (4).png', description: 'Erfahrung mit JavaScript' },
-  { title: 'GitHub', image: '/public/images/pngegg (3).png', description: 'Erfahrung mit GitHub' },
-  { title: 'React', image: '/public/images/pngegg (2).png', description: 'Erfahrung mit React' }, // إضافة React
-  { title: 'SCSS', image: '/public/images/pngegg (1).png', description: 'Erfahrung mit SCSS' }, // إضافة SCSS
-  { title: 'MongoDB', image: '/public/images/1175140.webp', description: 'Erfahrung mit MongoDB' },
-  { title: 'MySQL', image: 'images/mysql-1-logo-black-and-white.png', description: 'Erfahrung mit MySQL' },
-  { title: 'MongoDB', image: '/public/images/pngegg.png', description: 'Erfahrung mit MongoDB' },
-
-
-
+  { title: 'HTML', image: '/images/pngegg (6).png', description: 'Erfahrung mit HTML' },
+  { title: 'CSS', image: '/images/pngegg (5).png', description: 'Erfahrung mit CSS' },
+  { title: 'JavaScript', image: '/images/pngegg (4).png', description: 'Erfahrung mit JavaScript' },
+  { title: 'GitHub', image: '/images/pngegg (3).png', description: 'Erfahrung mit GitHub' },
+  { title: 'React', image: '/images/pngegg (2).png', description: 'Erfahrung mit React' },
+  { title: 'SCSS', image: '/images/pngegg (1).png', description: 'Erfahrung mit SCSS' },
+  { title: 'MongoDB', image: '/images/1175140.webp', description: 'Erfahrung mit MongoDB' },
+  { title: 'MySQL', image: '/images/mysql-1-logo-black-and-white.png', description: 'Erfahrung mit MySQL' }
 ];
 
 const Experience = () => {

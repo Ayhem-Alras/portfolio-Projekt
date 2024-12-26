@@ -1,5 +1,5 @@
 // src/components/ArrowDown.js
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './ArrowDown.css';
 
 const sections = ['about-me', 'projects', 'skills', 'contact']; // IDs of the sections to scroll through

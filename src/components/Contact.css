@@ -1,60 +1,63 @@
-
-
 .contact-container {
-    padding: 20px;
-    background-color: #4d4c4cf6;
-    text-align: center;
-  }
-  
-  .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #465053;
-    border: 1px solid #465053;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #4d4c4cf6;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    height: 100px;
-  }
-  
-  .submit-button {
-    background-color: #70868E;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #242e31;
-  }
-  
-  .thank-you-message {
-    font-size: 1.2rem;
-    color: green;
-  }
-  
+  padding: 20px;
+  background-color: #4d4c4cf6;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color:#b1b9c9;
+  border: 1px solid #b1b9c9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4d4c4cf6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #a6b2ca;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #242e31;
+}
+
+.thank-you-message {
+  font-size: 1.2rem;
+  color: green;
+}

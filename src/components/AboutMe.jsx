@@ -1,41 +1,47 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './AboutMe.css'; 
 
 const AboutMe = () => {
     const phrases = [
-        'Ich bin Ayhem und ich habe eine Leidenschaft für JavaScript und die Erstellung interaktiver Webanwendungen.',
-        'Hallo; Ich bin Ayhem.'
+        '"Herzlich willkommen! Mein Name ist Ayhem. Ich bin leidenschaftlicher Webentwickler und freue mich, Ihnen meine Arbeit vorzustellen."',
+        '"Ich liebe es, innovative und interaktive Webanwendungen zu entwickeln."',
+        '"Vielen Dank, dass Sie meine Seite besuchen!"'
     ];
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
-    const [typingSpeed, setTypingSpeed] = useState(500); 
+    const [typingSpeed, setTypingSpeed] = useState(100);
 
     useEffect(() => {
-        const typeText = () => {
+        const handleTyping = () => {
             const currentText = phrases[currentPhraseIndex];
-            const textLength = currentText.length;
 
-            
-            if (!isDeleting && displayedText !== currentText) {
+            if (!isDeleting) {
+                // كتابة النص تدريجيًا
                 setDisplayedText((prev) => currentText.substr(0, prev.length + 1));
-                setTimeout(typeText, typingSpeed);
-            } 
-           
-            else if (isDeleting && displayedText !== '') {
+                setTypingSpeed(100); // سرعة الكتابة
+                if (displayedText === currentText) {
+                    setIsDeleting(true);
+                    setTypingSpeed(2000); // تأخير قبل الحذف
+                }
+            } else {
+                // حذف النص تدريجيًا
                 setDisplayedText((prev) => currentText.substr(0, prev.length - 1));
-                setTimeout(typeText, typingSpeed);
-            } 
-            
-         
+                setTypingSpeed(50); // سرعة الحذف
+                if (displayedText === '') {
+                    setIsDeleting(false);
+                    setCurrentPhraseIndex((prevIndex) => (prevIndex + 1) % phrases.length);
+                }
+            }
         };
 
-        setTimeout(typeText, typingSpeed);
-    }, [currentPhraseIndex, displayedText, isDeleting, phrases, typingSpeed]);
+        const timer = setTimeout(handleTyping, typingSpeed);
+        return () => clearTimeout(timer); // تنظيف المؤقت عند إلغاء المكون
+    }, [displayedText, isDeleting, typingSpeed, phrases, currentPhraseIndex]);
 
     return (
         <div className="about-me">
-            <h1>Hallo;</h1>
+            <h1>Hallo!</h1>
             <h2>{displayedText}</h2>
         </div>
     );
