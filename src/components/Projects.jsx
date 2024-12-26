@@ -5,31 +5,31 @@ const projects = [
     title: "E-Commerce",
     description: '',
     link: 'git@github.com:Ayhem-Alras/Ampes.git',
-    image: '/public/images/E.png'
+    image: '/images/E.png'
   },
   {
     title: 'Movie-Search',
     description: '',
     link: 'https://favorite-movies-list-mqtx.vercel.app/',
-    image: '/public/images/Screenshot 665.png'
+    image: '/images/Screenshot 665.png'
   },
   {
     title: 'Wetter-App',
     description: '',
     link: 'https://weather-app-eta-five-31.vercel.app',
-    image: '/public/images/Screenshot 2024-06-27 123554.png'
+    image: '/images/Screenshot 2024-06-27 123554.png'
   },
   {
     title: 'To-do-List',
     description: '',
     link: 'https://to-do-list-bh17488zn-ayhem-alras-projects.vercel.app/',
-    image: '/public/images/Screenshot 2024-06-27 131658.png'
+    image: '/images/Screenshot 2024-06-27 131658.png'
   },
   {
     title: 'Taschenrschener',
     description: '',
     link: 'https://taschenrechner-z8z8.vercel.app/',
-    image: '/public/images/Screenshot 2024-06-27 133058.png'
+    image: '/images/Screenshot 2024-06-27 133058.png'
   }
 ];
 
